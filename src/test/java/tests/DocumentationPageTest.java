@@ -9,10 +9,14 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
+import static helpers.DriverHelper.getConsoleLogs;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.core.IsNot.not;
 
 @Tag("web")
 @Feature("Documentation")
-public class DocumentationPage extends TestBase {
+public class DocumentationPageTest extends TestBase {
     @Test
     @DisplayName("Enter Documentation Page")
     void mainDocPage() {
@@ -31,5 +35,13 @@ public class DocumentationPage extends TestBase {
         $(byText("Документация")).click();
 
         $("h1").shouldHave(text("Overview")).click();
+    }
+
+    @Test
+    @DisplayName("ConsoleLog Should Not Have any Errors")
+    void consoleLogShouldNotHaveErrors() {
+        open("/documentation");
+        String consoleLogs = getConsoleLogs();
+        assertThat(consoleLogs, not(containsString("SEVERE")));
     }
 }

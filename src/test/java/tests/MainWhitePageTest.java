@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 @Tag("web")
-public class MainWhitePage extends TestBase {
+public class MainWhitePageTest extends TestBase {
 
     @Test
     @DisplayName("Header should have Text \"SDK для быстрой разработки\"")
