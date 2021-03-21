@@ -17,7 +17,6 @@ public class MainWhitePageTest extends TestBase {
     void mainHomePage() {
 
         open("https://expload.com/");
-
         $("#home-1").shouldHave(text("SDK для быстрой разработки"));
 
     }

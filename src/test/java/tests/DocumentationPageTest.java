@@ -22,7 +22,6 @@ public class DocumentationPageTest extends TestBase {
     void mainDocPage() {
 
         open("https://expload.com/");
-
         $("#header-white-1").shouldHave(text("Getting started")).click();
     }
 
@@ -31,9 +30,7 @@ public class DocumentationPageTest extends TestBase {
     void shouldBeOpenedFromDirectPage() {
 
         open("https://expload.com/");
-
         $(byText("Документация")).click();
-
         $("h1").shouldHave(text("Overview")).click();
     }
 
