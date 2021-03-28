@@ -8,6 +8,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
+import static io.qameta.allure.Allure.step;
 
 @Tag("web")
 public class MainWhitePageTest extends TestBase {
@@ -37,8 +38,13 @@ public class MainWhitePageTest extends TestBase {
     @Test
     @DisplayName("Page should change language")
     void changeLanguageTest() {
-        open("");
-        $("#header").shouldHave(text("En")).click();
-        $("#header-white-1 h1").shouldHave(text("Платформа для разработки и дистрибуции игр с открытой экономикой"));
+        step("Open main page", () ->
+                open(""));
+
+        step("Change language on the page", () ->
+                $("#header").shouldHave(text("En")).click());
+
+        step("Verify successful switched", () ->
+        $("#header-white-1 h1").shouldHave(text("Платформа для разработки и дистрибуции игр с открытой экономикой")));
     }
 }
