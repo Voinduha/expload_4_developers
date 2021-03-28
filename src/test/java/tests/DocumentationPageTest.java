@@ -10,6 +10,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static helpers.DriverHelper.getConsoleLogs;
+import static io.qameta.allure.Allure.step;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.core.IsNot.not;
@@ -29,10 +30,14 @@ public class DocumentationPageTest extends TestBase {
     @Test
     @DisplayName("Page should Be Opened From DirectPage")
     void shouldBeOpenedFromDirectPage() {
+        step("Open main page", () ->
+                open(""));
 
-        open("");
-        $(byText("Документация")).click();
-        $("h1").shouldHave(text("Overview")).click();
+        step("Documentation page should ben opened", () ->
+                $(byText("Документация")).click());
+
+        step("Overview main page should ben opened ", () ->
+                $("h1").shouldHave(text("Overview")).click());
     }
 
     @Test
