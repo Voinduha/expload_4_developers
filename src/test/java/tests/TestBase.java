@@ -7,10 +7,8 @@ import org.junit.jupiter.api.BeforeAll;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static config.ConfigHelper.isVideoOn;
 import static helpers.AttachmentsHelper.*;
-import static helpers.AttachmentsHelper.attachVideo;
-import static helpers.DriverHelper.configureDriver;
-import static helpers.DriverHelper.getConsoleLogs;
-import static org.openqa.selenium.remote.HttpSessionId.getSessionId;
+import static helpers.DriverHelper.*;
+
 
 public class TestBase {
 
