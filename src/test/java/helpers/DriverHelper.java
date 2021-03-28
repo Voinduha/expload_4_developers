@@ -9,6 +9,8 @@ import static org.openqa.selenium.logging.LogType.BROWSER;
 
 public class DriverHelper {
     public static void configureDriver() {
+        Configuration.baseUrl = ConfigHelper.getWebUrl();
+        Configuration.startMaximized = true;
 
         if (ConfigHelper.isRemoteWebDriver()) {
             DesiredCapabilities capabilities = new DesiredCapabilities();
