@@ -16,11 +16,11 @@ def allureVersion = "2.13.8",
     junitVersion = "5.7.1"
 
 allure {
-    version = "${allureVersion}"
+    version = "$allureVersion"
     autoconfigure = true
     aspectjweaver = true
     useJUnit5 {
-        version = "${allureVersion}"
+        version = "$allureVersion"
     }
 }
 

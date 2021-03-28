@@ -9,6 +9,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
+
 import static helpers.DriverHelper.getConsoleLogs;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
@@ -21,7 +22,8 @@ public class DocumentationPageTest extends TestBase {
     @DisplayName("Enter Documentation Page")
     void mainDocPage() {
 
-        open("https://expload.com/");
+        open("");
+
         $("#header-white-1").shouldHave(text("Getting started")).click();
     }
 
@@ -29,7 +31,7 @@ public class DocumentationPageTest extends TestBase {
     @DisplayName("Page should Be Opened From DirectPage")
     void shouldBeOpenedFromDirectPage() {
 
-        open("https://expload.com/");
+        open("");
         $(byText("Документация")).click();
         $("h1").shouldHave(text("Overview")).click();
     }
