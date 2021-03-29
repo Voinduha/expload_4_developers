@@ -14,11 +14,11 @@ import static io.qameta.allure.Allure.step;
 public class MainWhitePageTest extends TestBase {
 
     @Test
-    @DisplayName("Header should have Text \"SDK для быстрой разработки\"")
+    @DisplayName("Header should have Text \"SDK COMPONENTS\"")
     void mainHomePage() {
 
         open("");
-        $("#home-1").shouldHave(text("SDK для быстрой разработки"));
+        $("#home-1").shouldHave(text("SDK COMPONENTS"));
 
     }
 
