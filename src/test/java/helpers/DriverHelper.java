@@ -17,7 +17,6 @@ public class DriverHelper {
 
         Configuration.baseUrl = ConfigHelper.getWebUrl();
         Configuration.startMaximized = true;
-        Configuration.timeout = 10000;
 
         if (ConfigHelper.isRemoteWebDriver()) {
             DesiredCapabilities capabilities = new DesiredCapabilities();
