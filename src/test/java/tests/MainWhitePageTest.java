@@ -42,9 +42,9 @@ public class MainWhitePageTest extends TestBase {
                 open(""));
 
         step("Change language on the page", () ->
-                $("#header").shouldHave(text("En")).click());
+                $("#header").shouldHave(text("Ru")).click());
 
         step("Verify successful switched", () ->
-        $("#header-white-1 h1").shouldHave(text("Платформа для разработки и дистрибуции игр с открытой экономикой")));
+        $("#header-white-1 h1").shouldHave(text("A PLATFORM FOR THE DEVELOPMENT AND DISTRIBUTION OF OPEN-ECONOMY GAMES")));
     }
 }
