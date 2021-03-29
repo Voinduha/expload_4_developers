@@ -9,12 +9,12 @@ import org.aeonbits.owner.Config;
 })
 public interface WebConfig extends Config {
 
-    @Key("username")
+    @Key("web.url")
     String webUrl();
 
-    @Key("remoteDriver")
+    @Key("web.remote.driver.user")
     String webRemoteDriverUser();
 
-    @Key("remotePassword")
+    @Key("web.remote.driver.password")
     String webRemoteDriverPassword();
 }
