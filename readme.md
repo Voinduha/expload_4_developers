@@ -16,4 +16,6 @@ Java, Selenide, Rest-Assured, Junit5, Gradle, Allure Reports, Allure TestOps, Je
 ___
 
 Screenshots
-![Jenkins - it is an open source automation server:](https://yadi.sk/i/NzvPrgB3JslVGQ "DanVu")
+
+Jenkins - it is an open source automation server:
+!(https://yadi.sk/i/NzvPrgB3JslVGQ)
