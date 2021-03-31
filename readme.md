@@ -22,3 +22,6 @@
 
 #### *Telegram notifications:*
 ![selenoid_screenshot](src/test/resources/images/telegram.png)
+
+
+#### *Allure TestOps - it is a TMS that allows to manage all test related stuff in one place:*
