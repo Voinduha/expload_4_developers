@@ -8,7 +8,14 @@
 - Download readme file from GitHub
 
 ## Technology Stack
-**Java, Selenide, Rest-Assured, Junit5, Gradle, Allure Reports, Allure TestOps, Jenkins, Selenoid, Telegram Bot, Jira.**
+- Java
+- Gradle
+- Junit5 + multi-threading runs
+- Selenide (Automation framework based on Selenium)
+- Selenoid (Virtualization system based on the docker)
+- Allure (+Allure test ops) test report system.
+- Jira integration / Jenkins integration
+- Telegram piechart reporting library integration
 
 ## Screenshots
 #### *Jenkins - it is an open source automation server:*
