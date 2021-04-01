@@ -5,6 +5,7 @@
 - Console Log Should Not Have any Errors
 - Header should have Text "SDK COMPONENTS"
 - Page should change language EN/RU
+- Download readme file from GitHub
 
 ## Technology Stack
 **Java, Selenide, Rest-Assured, Junit5, Gradle, Allure Reports, Allure TestOps, Jenkins, Selenoid, Telegram Bot, Jira.**
