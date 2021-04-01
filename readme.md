@@ -16,7 +16,11 @@
 
 #### *Allure Report - it is a flexible lightweight test report tool:*
 ![selenoid_screenshot](src/test/resources/images/allure_with_steps.png)
+
+
 ![selenoid_screenshot](src/test/resources/images/allure_with_steps1.png)
+
+
 ![selenoid_screenshot](src/test/resources/images/allure_test_body.png)
 
 
