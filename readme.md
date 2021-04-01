@@ -5,7 +5,7 @@
 - Console Log Should Not Have any Errors
 - Header should have Text "SDK COMPONENTS"
 - Page should change language EN/RU
-- Download readme file from GitHub
+- Download readme file from GitHub and search for the desired text in it
 
 ## Technology Stack
 - Java
