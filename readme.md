@@ -32,9 +32,9 @@
 ![selenoid_screenshot](src/test/resources/images/allure_test_body.png)
 
 
+#### *Allure TestOps - it is a TMS that allows to manage all test related stuff in one place:*
+![selenoid_screenshot](src/test/resources/images/AllureTestOpsFull.png)
+
+
 #### *Telegram notifications:*
 ![selenoid_screenshot](src/test/resources/images/telegram.png)
-
-
-#### *Allure TestOps - it is a TMS that allows to manage all test related stuff in one place:*
-![selenoid_screenshot](src/test/resources/images/AllureTestOps.png)
