@@ -1,9 +1,9 @@
 # Tests for expload.com website
 ## UI tests:
 - Main page tests
-- Page should Be Opened From DirectPage
-- Console Log Should Not Have any Errors
-- Header should have Text "SDK COMPONENTS"
+- Page should be opened from direct page
+- Console log should not have any errors
+- Header should have text "SDK COMPONENTS"
 - Page should change language EN/RU
 - Download readme file from GitHub and search for the desired text in it
 
